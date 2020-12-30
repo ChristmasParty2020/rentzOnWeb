@@ -8,7 +8,7 @@
         <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Play a new Game ?</div>
         <span class="block mt-1 text-lg leading-tight font-medium text-black">Start a game and then share the link to follow the game progress with family.</span>
         <p class="mt-2 text-gray-500">You can always use just one to keep the count, but sharing is fun.</p>
-        <div class="">
+        <div>
           <button @click="playOnline" class="btn-indigo">
             Play online
           </button>

@@ -3,10 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "tdd:vite": "vite --config ./test/vite.config.test.js",
+    "tdd": "aria-vue -w --path test-ui --script ./test/plugins.js",
+    "headless": "aria-vue -w -H --script ./test/plugins.js"
   },
   "dependencies": {
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@tailwindcss/postcss7-compat": "2.0.2",
@@ -20,6 +24,11 @@
     "prettier": "2.1.2",
     "sass": "1.30.0",
     "vite": "1.0.0-rc.13",
-    "vue": "3.0.4"
+    "vue": "3.0.4",
+    "@types/koa-router": "7.4.1",
+    "@vue/test-utils": "2.0.0-beta.5",
+    "aria-mocha": "0.5.2",
+    "aria-vue": "0.4.1",
+    "puppeteer": "^3.2.0"
   }
 }
